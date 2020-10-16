@@ -1,0 +1,143 @@
+/* General Styles */
+
+h1 {
+  font-size: 6rem;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* container */
+
+.UI-CONTAINER {
+  position: relative;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* NAV */
+
+.UI_NAV {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+
+.UI_NAV_LINKS {
+  flex-basis: 20%;
+}
+
+.UI_NAV_ITEMS {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Header */
+
+.UI_JUMBOTRON {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 7em 5em;
+  margin: 1em 0;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  text-shadow: -1px 2px 5px black;
+  box-shadow: 0 1px 6px rgb(0, 0, 0);
+}
+
+.UI_JUMBOTRON h1 {
+  font-weight: 500;
+}
+
+.JUMBO_SEARCH {
+  width: 70%;
+}
+
+/* dispensarySearch */
+
+.dispensarySearch {
+  display: flex;
+}
+
+.dispensarySearch_left {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 1em 1.15em;
+  box-shadow: 0 1px 5px rgb(138, 138, 138);
+  color: white;
+  border-radius: 5px;
+}
+
+.dispensarySearch_left p {
+  margin-bottom: 0.5em;
+  font-size: 1.5rem;
+}
+
+.UI_ZIP_SEARCH {
+  width: 80%;
+}
+
+.dispensarySearch_right {
+  flex-basis: 25%;
+  margin-left: 1em;
+  padding: 1em 1.15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dispensarySearch_right > p {
+  margin: auto;
+}
+
+/* info section */
+
+.infoItem {
+  padding: 1em 0;
+  margin: 2em 0 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.infoItemText {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.infoItemImg {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.infoItem img {
+  width: 100%;
+  box-shadow: 0 1px 5px rgb(138, 138, 138);
+}
+.infoItem > :nth-child(2) {
+  margin-left: 3rem;
+}
+
+/* Bottom Sign Up Bar */
+
+.signUp {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 0;
+  margin: 2em 0 0;
+}
