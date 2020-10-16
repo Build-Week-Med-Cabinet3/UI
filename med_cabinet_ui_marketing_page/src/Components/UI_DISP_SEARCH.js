@@ -4,14 +4,14 @@ import { Input, InputGroup, InputGroupAddon, Button } from "reactstrap";
 export default function UI_DISP_SEARCH({ primary, secondary }) {
   return (
     <div>
-      <p>Find dispenseries near you:</p>
+      <p>Find Dispenseries Near You</p>
       <div className="UI_ZIP_SEARCH">
         <InputGroup>
           <Input
             type="text"
             name="zipSearch"
             id="zipSearch"
-            placeholder="zip"
+            placeholder="Zip Code"
           />
           <InputGroupAddon addonType="append">
             <Button

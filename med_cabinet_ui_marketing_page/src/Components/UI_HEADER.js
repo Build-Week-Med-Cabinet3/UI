@@ -18,7 +18,7 @@ export default function UI_HEADER({ primary, secondary }) {
       >
         <h1 className="display-3">Med Cabinet</h1>
         <div>
-          <p>Slogan Here</p>
+          <p>"The last medicine cabinet you well ever need to check"</p>
           <div className="JUMBO_SEARCH">
             <InputGroup style={{ boxShadow: "0 0 20px rgba(0,0,0,.3)" }}>
               <Input
