@@ -277,12 +277,10 @@ body {
   }
 
   .infoItemText {
-    order: unset;
     flex: 1;
   }
 
   .infoItemImg {
-    order: unset;
     flex: 1;
     margin-bottom: unset;
   }

@@ -1,11 +1,14 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class UI_INFO_TEXT extends Component {
   render() {
     console.log(this.props.header);
     return (
       <div className="infoItemText">
-        <h2>{this.props.header}</h2>
+        <Link to={"/" + this.props.link}>
+          <h2>{this.props.header}</h2>
+        </Link>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
           reprehenderit ut cumque laudantium, totam minima. Dolor, impedit
@@ -31,17 +34,10 @@ export default class UI_INFO_ITEM extends Component {
   render() {
     return (
       <div>
-        {this.props.imgFirst ? (
-          <div className="infoItem">
-            <UI_INFO_IMG img={this.props.img} />
-            <UI_INFO_TEXT header={this.props.header} />
-          </div>
-        ) : (
-          <div className="infoItem">
-            <UI_INFO_TEXT header={this.props.header} />
-            <UI_INFO_IMG img={this.props.img} />
-          </div>
-        )}
+        <div className="infoItem">
+          <UI_INFO_TEXT header={this.props.header} link={this.props.link} />
+          <UI_INFO_IMG img={this.props.img} />
+        </div>
       </div>
     );
   }
