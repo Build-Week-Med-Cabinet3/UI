@@ -1,7 +1,7 @@
 import React from "react";
 import { Input, InputGroup, InputGroupAddon, Button } from "reactstrap";
 
-export default function UI_DISP_SEARCH({ primary, secondary }) {
+export default function UI_DISP_SEARCH({ secondary }) {
   return (
     <div>
       <p>Find Dispenseries Near You</p>

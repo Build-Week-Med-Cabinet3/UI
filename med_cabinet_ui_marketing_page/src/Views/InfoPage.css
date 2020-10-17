@@ -1,0 +1,12 @@
+.UI_INFO_PAGE {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 0 auto;
+  width: 90vw;
+  text-align: center;
+}
+
+section {
+  margin-top: 1em;
+}
