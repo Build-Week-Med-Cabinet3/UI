@@ -1,9 +1,4 @@
 /* General Styles */
-
-h1 {
-  font-size: 6rem;
-}
-
 body {
   scroll-behavior: smooth;
 }
@@ -12,7 +7,7 @@ body {
 
 .UI-CONTAINER {
   position: relative;
-  width: 85vw;
+  width: 95vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -26,7 +21,7 @@ body {
 }
 
 .UI_NAV_LINKS {
-  flex-basis: 20%;
+  flex-basis: 35%;
 }
 
 .UI_NAV_ITEMS {
@@ -40,28 +35,33 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-flow: column nowrap;
-  padding: 7em 5em;
-  margin: 1em 0;
+  flex-flow: column wrap;
+  padding: 5em 2em;
+  margin: 0.5em 0;
   justify-content: center;
+  align-items: center;
   border-radius: 5px;
   color: white;
   text-shadow: -1px 2px 5px black;
   box-shadow: 0 1px 6px rgb(0, 0, 0);
+  text-align: center;
 }
 
 .UI_JUMBOTRON h1 {
-  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 
 .JUMBO_SEARCH {
-  width: 70%;
+  width: 100%;
+  align-self: stretch;
 }
 
 /* dispensarySearch */
 
 .dispensarySearch {
   display: flex;
+  flex-flow: column nowrap;
 }
 
 .dispensarySearch_left {
@@ -69,7 +69,8 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  padding: 1em 1.15em;
+  align-items: center;
+  padding: 1em 0;
   box-shadow: 0 1px 5px rgb(138, 138, 138);
   color: white;
   border-radius: 5px;
@@ -81,51 +82,52 @@ body {
 }
 
 .UI_ZIP_SEARCH {
-  width: 80%;
+  width: 100%;
 }
 
 .dispensarySearch_right {
   flex-basis: 25%;
   margin-left: 1em;
-  padding: 1em 1.15em;
+  padding: 1em 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .dispensarySearch_right > p {
-  margin: auto;
+  font-size: 1.5rem;
+  margin: 0 10% 0 5%;
+}
+
+.dispensarySearch_right > p:nth-child(2) {
+  font-style: italic;
+  text-align: right;
+  font-size: 1.25rem;
 }
 
 /* info section */
 
 .infoItem {
-  padding: 1em 0;
+  position: relative;
+  padding: 1em;
   margin: 2em 0 0;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   text-align: center;
+  box-shadow: 0 0 10px rgb(138, 138, 138);
 }
 
 .infoItemText {
-  flex: 1;
-  padding: 0 1rem;
+  order: 2;
 }
 
 .infoItemImg {
-  flex: 1;
-  padding-left: 1rem;
+  order: 1;
+  margin-bottom: 0.5em;
 }
 
 .infoItem img {
   width: 100%;
   box-shadow: 0 1px 5px rgb(138, 138, 138);
-}
-.infoItem > :nth-child(2) {
-  margin-left: 3rem;
 }
 
 /* Bottom Sign Up Bar */
@@ -140,4 +142,156 @@ body {
   align-items: center;
   padding: 5em 0;
   margin: 2em 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  /* dispensarySearch */
+
+  .dispensarySearch {
+    flex-flow: row nowrap;
+  }
+
+  .dispensarySearch_left {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 0.5em 1.15em;
+  }
+
+  .dispensarySearch_right {
+    flex-basis: 50%;
+    margin-left: 1em;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dispensarySearch_right > p {
+    font-size: 1.5rem;
+    margin: 0 10% 0 5%;
+  }
+
+  .dispensarySearch_right > p:nth-child(2) {
+    font-style: italic;
+    text-align: right;
+    font-size: 1.25rem;
+  }
+
+  /* Info Items */
+  .infoItem {
+    padding: 1em;
+    margin: 2em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .infoItemText {
+    order: unset;
+    flex: 1;
+  }
+
+  .infoItemImg {
+    order: unset;
+    flex: 1;
+    margin-bottom: unset;
+  }
+
+  .infoItem img {
+    width: 100%;
+    box-shadow: 0 1px 5px rgb(138, 138, 138);
+  }
+  .infoItem > :nth-child(2) {
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* container */
+
+  .UI-CONTAINER {
+    position: relative;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* NAV */
+
+  .UI_NAV_LINKS {
+    flex-basis: 20%;
+  }
+
+  /* Jumbotron */
+
+  .UI_JUMBOTRON {
+    padding: 7em 5em;
+    margin: 1em 0;
+  }
+
+  .UI_JUMBOTRON h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+  }
+
+  /* dispensarySearch */
+
+  .dispensarySearch {
+    flex-flow: row nowrap;
+  }
+
+  .dispensarySearch_left {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1em 1.15em;
+  }
+
+  .dispensarySearch_right {
+    flex-basis: 25%;
+    margin-left: 1em;
+    padding: 1em 1.15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dispensarySearch_right > p {
+    margin: auto;
+  }
+
+  /* Info Items */
+  .infoItem {
+    padding: 1em;
+    margin: 2em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .infoItemText {
+    order: unset;
+    flex: 1;
+  }
+
+  .infoItemImg {
+    order: unset;
+    flex: 1;
+    margin-bottom: unset;
+  }
+
+  .infoItem img {
+    width: 100%;
+    box-shadow: 0 1px 5px rgb(138, 138, 138);
+  }
+  .infoItem > :nth-child(2) {
+    margin-left: 3rem;
+  }
 }

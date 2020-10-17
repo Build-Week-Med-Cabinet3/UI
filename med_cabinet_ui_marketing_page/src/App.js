@@ -11,6 +11,7 @@ function App() {
   // Used to call color changes in other components
   const colorPrimary = "#247ea7";
   const colorSecondary = "#09921d";
+
   return (
     <div className="App">
       {/* Nav Top Bar */}
