@@ -83,6 +83,7 @@ body {
 
 .UI_ZIP_SEARCH {
   width: 100%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 .dispensarySearch_right {
