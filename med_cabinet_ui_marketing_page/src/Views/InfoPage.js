@@ -9,52 +9,23 @@ export default class InfoPage extends Component {
         <h1>{this.props.content.header}</h1>
         {/* Image */}
         <div>
-          <img src={this.props.content.img} style={{ width: "50%" }} />
+          <img
+            src={this.props.content.img}
+            style={{ width: "50%" }}
+            alt={this.props.content.header + " img"}
+          />
         </div>
         {/* Text */}
         <section>
-          <h2>Sub Section</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-            tempora, tempore eligendi eos omnis quisquam maiores! Perferendis,
-            deleniti cumque odio illo labore aliquid id amet architecto ad iure
-            officiis ab. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Nesciunt aspernatur similique nemo. Sunt nihil ut unde dolore
-            ratione laudantium tempora modi quod, hic magni tempore quidem
-            recusandae commodi eaque amet? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Rerum natus, molestias ipsa architecto
-            minima, quis exercitationem iusto sequi animi possimus labore
-            voluptatum, nostrum ipsum itaque doloribus quia fugiat nihil.
-            Ratione.
-          </p>
-          <h2>Sub Section</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-            tempora, tempore eligendi eos omnis quisquam maiores! Perferendis,
-            deleniti cumque odio illo labore aliquid id amet architecto ad iure
-            officiis ab. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Nesciunt aspernatur similique nemo. Sunt nihil ut unde dolore
-            ratione laudantium tempora modi quod, hic magni tempore quidem
-            recusandae commodi eaque amet? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Rerum natus, molestias ipsa architecto
-            minima, quis exercitationem iusto sequi animi possimus labore
-            voluptatum, nostrum ipsum itaque doloribus quia fugiat nihil.
-            Ratione.
-          </p>
-          <h2>Sub Section</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-            tempora, tempore eligendi eos omnis quisquam maiores! Perferendis,
-            deleniti cumque odio illo labore aliquid id amet architecto ad iure
-            officiis ab. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Nesciunt aspernatur similique nemo. Sunt nihil ut unde dolore
-            ratione laudantium tempora modi quod, hic magni tempore quidem
-            recusandae commodi eaque amet? Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Rerum natus, molestias ipsa architecto
-            minima, quis exercitationem iusto sequi animi possimus labore
-            voluptatum, nostrum ipsum itaque doloribus quia fugiat nihil.
-            Ratione.
-          </p>
+          {this.props.content.content.map((e) => {
+            if (e.type === "h3") {
+              return <h3>{e.text}</h3>;
+            }
+            if (e.type === "p") {
+              return <p>{e.text}</p>;
+            }
+            return null;
+          })}
         </section>
       </div>
     );

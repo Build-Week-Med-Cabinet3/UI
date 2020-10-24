@@ -29,6 +29,7 @@ export default function UI_HEADER({ primary, secondary }) {
               />
               <InputGroupAddon addonType="append">
                 <Button
+                  disabled
                   style={{
                     backgroundColor: secondary,
                     border: "1px solid " + secondary,

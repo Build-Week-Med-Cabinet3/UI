@@ -7,6 +7,7 @@
   text-align: center;
 }
 
-section {
+.UI_INFO_PAGE section {
   margin-top: 1em;
+  padding: 0 25%;
 }

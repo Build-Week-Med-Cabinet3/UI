@@ -15,6 +15,7 @@ export default function UI_DISP_SEARCH({ secondary }) {
           />
           <InputGroupAddon addonType="append">
             <Button
+              disabled
               style={{
                 backgroundColor: secondary,
                 border: "1px solid " + secondary,

@@ -40,16 +40,19 @@ export default class Home extends Component {
               link={this.props.content.infoItemOne.link}
               header={this.props.content.infoItemOne.header}
               img={this.props.content.infoItemOne.img}
+              content={this.props.content.infoItemOne.content[1].text}
             />
             <UI_INFO_ITEM
               link={this.props.content.infoItemTwo.link}
               header={this.props.content.infoItemTwo.header}
               img={this.props.content.infoItemTwo.img}
+              content={this.props.content.infoItemTwo.content[2].text}
             />
             <UI_INFO_ITEM
               link={this.props.content.infoItemThree.link}
               header={this.props.content.infoItemThree.header}
               img={this.props.content.infoItemThree.img}
+              content={this.props.content.infoItemThree.content[2].text}
             />
           </section>
         </div>

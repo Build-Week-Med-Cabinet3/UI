@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "reactstrap";
 
 export default function UI_DISP_JOIN({ colorPrimary, colorSecondary }) {
   return (
@@ -23,7 +22,7 @@ export default function UI_DISP_JOIN({ colorPrimary, colorSecondary }) {
           padding: ".375rem .75rem",
           color: "white",
         }}
-        href="https://med-cabinet-dusky.vercel.app/register"
+        href="https://medcabinetworld.netlify.app/register"
       >
         Join Today
       </a>
